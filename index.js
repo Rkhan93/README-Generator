@@ -47,10 +47,13 @@ function askQuestions() {
 // once the answers come back, writeToFile
 // writeToFile("README.md", data);
 function writetoFile(fileName, data) {
-    fs.writeFile(fileName, data, "utf8", function (err) {
+    fs.writeFile(fileName, data, function (err) {
       if (err) {
         throw err;
       }
       console.log("You have successfully written your README file");
     });
   };
+
+    
+   // I know I have a ways to go, had some trouble on this assignment but wanted to at least submit something.
